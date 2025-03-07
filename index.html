@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>ReDDiT: Efficient Diffusion as Low Light Enhancer</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,39 +52,51 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Efficient Diffusion as Low Light Enhancer</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Guanzhou Lan</a><sup>1,3*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qianli Ma</a><sup>2*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuqi Yang</a><sup>1</sup>,</span><br>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhigang Wang</a><sup>3</sup>,</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Dong Wang</a><sup>3</sup>,</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xuelong Li</a><sup>1&#8224</sup>,</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Bin Zhao</a><sup>1,3&#8224</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      <sup>1</sup>
+                      Northwestern Polytechnical University &nbsp;&nbsp;
+                      <sup>2</sup>
+                      Shanghai Jiao Tong University &nbsp;&nbsp;
+                      <br>
+                      <sup>3</sup>
+                      Shanghai AI Laboratory &nbsp;&nbsp;
+                      <br>CVPR 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution<br><sup>&#8224</sup>Denotes Corresponding Author</small></small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2410.12346" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper(ReDDiT)</span>
                       </a>
                     </span>
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/cvpr25_supp.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -95,7 +107,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/lgz-0713/ReDDiT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +118,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/pdf/2410.12346" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -124,12 +136,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -137,8 +149,21 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop" style="width: 60%; max-width: none;">
+      <div class="hero-body">
+            <img src="static/images/cvpr2025_top1.png" style="width:100%; margin-bottom:10px" alt="Teaser."/>
+      <p style="margin-top: 0;">
+        ReDDiT shifts the teacher trajectory from the original Gaussian distribution to a residual space, effectively reducing the sampling gap. Subsequently, it refines the teacher trajectory towards the ground truth trajectory to mitigate fitting errors.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,8 +173,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            The computational burden of the iterative sampling process remains a major challenge in diffusion-based Low-Light Image Enhancement (LLIE). Current acceleration methods, whether training-based or training-free, often lead to significant performance degradation, highlighting the trade-off between performance and efficiency.
+            In this paper, we identify two primary factors contributing to performance degradation: fitting errors and the inference gap. Our key insight is that fitting errors can be mitigated by linearly extrapolating the incorrect score functions, while the inference gap can be reduced by shifting the Gaussian flow to a reflectance-aware residual space.
+            Based on the above insights, we design Reflectance-Aware Trajectory Refinement (RATR) module, a simple yet effective module to refine the teacher trajectory using the reflectance component of images. Following this, we introduce <b>Re</b>flectance-aware <b>D</b>iffusion with <b>Di</b>stilled <b>T</b>rajectory (<b>ReDDiT</b>), an efficient and flexible distillation framework tailored for LLIE. Our framework achieves comparable performance to previous diffusion-based methods with redundant steps in just 2 steps while establishing new state-of-the-art (SOTA) results with 8 or 4 steps. Comprehensive experimental evaluations on 10 benchmark datasets validate the effectiveness of our method, consistently outperforming existing SOTA methods.          </p>
         </div>
       </div>
     </div>
@@ -157,38 +183,51 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Method Overview -->
+<section class="hero teaser">
+  <div class="container is-max-desktop" style="width: 70%; max-width: none;">
+      <div class="hero-body">
+            <img src="static/images/pipeline.png" style="width:100%; margin-bottom:10px" alt="Teaser."/>
+      <p style="margin-top: 0;">
+        Pipiline of our proposed ReDDiT. The distillation process involves two parts: teacher model leverages the estimated reflectance to refine its trajectory and student model's trajectory is guided by teacher's trajectory, via a distillation loss. <b>TD</b> denotes the Trajectory Decoder while <b>RATR</b> denotes the Reflectance-Aware Trajectory Refinement.        </p>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Method Overview -->
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel"  class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fig_1.png" style="width:100%; margin-bottom:10px" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fig_2.png" style="width:100%; margin-bottom:10px" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+         
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fig_3.png" style="width:100%; margin-bottom:10px" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+        
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/fig_4.png" style="width:100%; margin-bottom:10px" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      
       </h2>
     </div>
   </div>
@@ -198,52 +237,107 @@
 <!-- End image carousel -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- 使用Bulma栅格系统 -->
+      <div class="columns is-flex-mobile is-flex-column" style="gap: 1.5rem">
+        
+        <!-- 每个表格项改为列布局 -->
+        <div class="column is-full-mobile is-half-desktop">
+          <img src="static/images/table_1.png" class="image" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered mt-3">
+
+          </h2>
+        </div>
+        
+        <div class="column is-full-mobile is-half-desktop">
+          <img src="static/images/table_4.png" class="image" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered mt-3">
+
+          </h2>
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- 使用Flexbox垂直排列 -->
+      <div class="columns is-flex-mobile is-flex-column" style="gap: 1.5rem">
+        
+        <!-- 第一张图片 -->
+        <div class="column is-full-mobile is-half-desktop">
+          <img src="static/images/table_2.png" class="image" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered mt-3">
+
+          </h2>
+        </div>
+        
+        <!-- 第二张图片 -->
+        <div class="column is-full-mobile is-half-desktop">
+          <img src="static/images/table_3.png" class="image" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered mt-3">
+
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+            
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+            
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -251,7 +345,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +354,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +364,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +372,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <p>If you find our work useful, please consider citing our paper:</p>
+      <pre><code>
+        @InProceedings{lan2024towards,
+          title={Efficient Diffusion as Low Light Enhancer},
+          author={Lan, Guanzhou and Ma, Qianli and Yang, Yuqi and Wang, Zhigang and Wang, Dong and Li, Xuelong and Zhao, Bin},
+          booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+          year={2025}
+          }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -292,7 +394,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
